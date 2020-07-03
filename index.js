@@ -19,7 +19,7 @@ function displayDogs(response, breed) {
 function listenToForm() {
     $('form').submit(e => {
         e.preventDefault();
-        let breed = $('#breed').val();
+        let breed = $('#breed').val().toLowerCase();
         fetchDogs(breed);
     });
 }
